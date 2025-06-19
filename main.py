@@ -1,5 +1,8 @@
 from fastapi.responses import HTMLResponse #インポート
 
+from fastapi import FastAPI
+
+app = FastAPI()
 ### コードいろいろ... ###
 
 @app.get("/index")
