@@ -47,6 +47,6 @@ def index():
     """
     return HTMLResponse(content=html_content, status_code=200)
 
-@app.post("/present")
-async def give_present(present):
-    return {"response": f"サーバです。誕生日おめでとう私！ {present}ありがとう。この日を忘れたりはしません。"}  # f文字列というPythonの機能を使っている
+@app.post("/greeting")
+async def give_name(name):
+    return {"response": f"サーバです。{name}と言うのですね！これからよろしくお願いします。"}  # f文字列というPythonの機能を使っている
